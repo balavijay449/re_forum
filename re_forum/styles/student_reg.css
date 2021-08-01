@@ -1,0 +1,95 @@
+.root{
+	height: 100vh;
+	background-color: rgba(230,230,230,0.3);
+}
+.sub-root{
+	height: 600px;
+	width: 650px;
+	background-color: #fdfdff;
+	box-shadow: 0 0 20px  rgba(0,0,0,0.1);
+	border-radius: 10px;
+	position: relative;
+}
+.text{
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 30px;
+	text-align: center;
+}
+.submit{
+	margin-top: 5px;
+}
+.row{
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+.input{
+	border: none;
+	background-color: #f9f9f9;
+	border-bottom: 2px solid #21f0af;
+	border-radius: 0;
+	height: 45px;
+	font-size: 20px;
+	text-align: center;
+	transition-duration: .5s;
+	color: #737373;
+	margin-top: 20px !important;
+	width: 256px !important;
+}
+.input::-webkit-input-placeholder{
+	color: #b5b5b5;
+}
+.input:focus{
+	outline: none;
+	border-bottom-color: #0D6EFD;
+}
+.submit{
+	font-size: 25px !important;
+	width: 130px;
+	margin: 0 auto;
+}
+.explain-text{
+	color: #aaa;
+	font-size: 13px;
+	text-align: justify;
+	margin-left: 13px;
+	transition-duration: .2s;
+}
+.input:focus ~ .explain-text{
+	color: #0D6EFD;
+}
+.create{
+	color: #5bf4c4;
+	text-decoration: underline;
+}
+.create:hover{
+	color: #0D6EFD;
+}
+.explain-text.pass{
+	margin-left: 167px;
+}
+select.input{
+	color: #b5b5b5;
+	text-align-last: center;
+}
+select option{
+	color: #737373;
+}
+@media only screen and (max-width: 575px){
+	.input{
+		margin-top: 0 !important;
+	}
+	.root{
+		height: 820px;
+	}
+	.sub-root{
+		height: 100%;
+		width: 1000%;
+	}
+	.explain-text{
+		text-align: center;
+	}
+	.explain-text.pass{
+		margin-left: 0;
+	}
+}

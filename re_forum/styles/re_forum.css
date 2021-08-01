@@ -1,0 +1,30 @@
+.root{
+	height: 100vh;
+	background-color: rgba(230,230,230,0.3);
+}
+.sub-root{
+	height: 400px;
+	width: 350px;
+	background-color: #fdfdff;
+	box-shadow: 0 0 20px  rgba(0,0,0,0.1);
+	border-radius: 10px;
+	position: relative;
+}
+.text{
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 40px;
+	text-align: center;
+}
+.student, .or, .faculty{
+	font-size: 25px !important;
+	margin-top: 30px;
+}
+.or{
+	font-size: 20px !important;
+}
+.content-root{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
