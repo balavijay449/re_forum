@@ -14,7 +14,6 @@ $sql = "INSERT INTO student_details (reg_no, name, college, mail, dept, sem, pas
 
 if ($reg_no != "" && $name != "" && $college != "" && $mail != "" && $dept != "" && $sem != "" && $pass != "") {
 	if($db->query($sql)){
-		echo "success";
 	}
 	else{
 		$mail_sql = "SELECT mail FROM student_details WHERE mail = '$mail'";
